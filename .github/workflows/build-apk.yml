@@ -22,7 +22,7 @@ jobs:
           node-version: 20
 
       - name: Install dependencies
-        run: npm install
+        run: npm install && npm install @capacitor/cli @capacitor/core @capacitor/android
 
       - name: Setup Android
         run: |

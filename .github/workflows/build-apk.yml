@@ -35,7 +35,7 @@ jobs:
       - name: Fix Kotlin conflict
         run: |
           cd android
-          sed -i 's/kotlin-stdlib-jdk7:1.6.21/kotlin-stdlib-jdk7:1.8.22/g' app/build.gradle
+          sed -i '/kotlin-stdlib/d' app/build.gradle
       - name: Build APK
         run: |
           cd android

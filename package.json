@@ -1,5 +1,16 @@
 {
-  "name": "tr-accounts",
+  "name": "tr-accounts-book",
   "version": "1.0.0",
-  "private": true
+  "private": true,
+  "description": "TR-ACCOUNTS-BOOK Android Accounts App",
+  "scripts": {
+    "build": "echo Build completed"
+  },
+  "dependencies": {
+    "@capacitor/core": "6.2.1",
+    "@capacitor/android": "6.2.1"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "6.2.1"
+  }
 }

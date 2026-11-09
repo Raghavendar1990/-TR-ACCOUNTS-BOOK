@@ -31,15 +31,9 @@ jobs:
 
       - name: Setup Android
         run: |
-          npm install 
-          @capacitor/android@latest
+          npm install @capacitor/android@latest
           npx cap add android
           npx cap sync android
-
-      - name: Fix Kotlin conflict
-        run: |
-          cd android
-          sed -i '/kotlin-stdlib/d' app/build.gradle
 
       - name: Build APK
         run: |

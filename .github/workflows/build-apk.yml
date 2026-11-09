@@ -31,7 +31,8 @@ jobs:
 
       - name: Setup Android
         run: |
-          npm install @capacitor/android
+          npm install 
+          @capacitor/android@latest
           npx cap add android
           npx cap sync android
 

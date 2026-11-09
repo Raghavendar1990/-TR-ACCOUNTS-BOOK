@@ -32,10 +32,7 @@ jobs:
         run: |
           npx cap add android
           npx cap sync android
-      - name: Fix Kotlin conflict
-        run: |
-          cd android
-          sed -i '/kotlin-stdlib/d' app/build.gradle
+          
       - name: Build APK
         run: |
           cd android
